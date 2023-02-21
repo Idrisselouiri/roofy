@@ -28,7 +28,6 @@ body{
 .toogle_menu{
   display: none;
 }
-
 body{
   position: relative;
 }
@@ -48,11 +47,13 @@ header{
 }
 header .logo{
   color: #000;
-  font-size: 13px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+header .logo h1{
+  font-size: 24px;
+  font-weight: 900;
 }
 header .logo i{
   font-size: 2.5rem;
@@ -65,14 +66,13 @@ header .menu li{
   margin: 0 15px;
 }
 header .menu li a{
-  font-size: 18px;
+  font-size: 20px;
   color: #000;
   font-weight: 300;
   transition: 0.2s;
 }
 header .menu li .active{
- border-bottom: orangered 2px solid ;
-
+  border-bottom: orangered 2px solid ;
 }
 header .menu li a:hover{
   color: #ea1f33;
@@ -759,34 +759,38 @@ footer{
   animation: moving 2s linear infinite;
 }
 
- 
-  
-
-
-
-
 @media   (max-width:800px)  {
   header{
-    padding: 5px 0;
+    padding: 8px 0;
   }
    header .menu{
       display: none;
     }
-    header .logo{
-      font-size: 11px;
+    header .logo h1{
+      font-size: 20px;
     }
     header .logo i{
-      font-size: 2.1rem;
+      font-size: 20px;
       padding-right: 5px;
     }
+    header .menu li{
+      margin: 0 10px;
+    }
+    header .menu li a{
+      font-size: 16px;
+      color: #000;
+      font-weight: 300;
+      transition: 0.2s;
+    }
     header .ctn{
-      padding: 5px 25px;
+      padding: 5px 16px;
       background-color: #ea1f33;
       cursor: pointer;
       color: #fff;
       position: absolute;
-      right: 6rem;
+      right: 5rem;
       border-radius: 4px;
+      font-size: 14px;
     }
     #home {
       display: flex;
@@ -798,16 +802,21 @@ footer{
       text-align: center;
     }
     .countainer h1{
-      font-size: 35px;
+      font-size: 25px;
       line-height: 50px;
     }
     .countainer p{
-      font-size: 18px;
+      font-size: 16px;
+      padding: 0 15px;
+    }
+    .countainer .ctn{
+      padding: 8px 16px;
+      font-size: 16px;
     }
     .toogle_menu{   
       position: relative;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -815,7 +824,7 @@ footer{
     }
     .toogle_menu span{
       background-color: #ea1f33;
-      width: 35px;
+      width: 30px;
       height: 5px;
       border-radius: 6px;
       transition: 0.5s;
@@ -978,78 +987,20 @@ color: #333;
 
 }
 @media (min-width:800px) and (max-width:1150px) {
-  header .menu{
-    display: none;
+  header .logo h1{
+    font-size: 21px;
   }
-
-  .toogle_menu{   
-    position: relative;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  header .logo i{
+    font-size: 21px;
   }
-  .toogle_menu span{
-    background-color: #ea1f33;
-    width: 35px;
-    height: 5px;
-    border-radius: 6px;
-    transition: 0.5s;
+  header .menu li{
+    margin: 0 15px;
   }
-  .toogle_menu::before{
-    content: '';
-    position: absolute;
-    background-color: #ea1f33;
-    width: 20px;
-    height: 5px;
-    border-radius: 6px;
-    transition: 0.5s;
-    transform: translateY(10px);
-} 
-.toogle_menu span.active{
-  width: 0px;
-}
-.toogle_menu:after{
-  content: '';
-  width: 20px;
-  position: absolute;
-  background-color: #ea1f33;
-  transform: translateY(-10px);
-  height: 5px;
-  border-radius: 6px;
-  transition: 0.5s;
-}
-.toogle_menu.active::before {
-  width:  28px;
-   transform: rotate(45deg);
- }
- .toogle_menu.active:after {
-  width:  28px;
-   transform: rotate(-45deg);
- }
-
-header .menu.responsive {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-}
-  header .ctn{
-    padding: 5px 25px;
-    position: absolute;
-    right: 8rem;
+  header .menu li a{
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+    transition: 0.2s;
   }
   .countainer{
     width: 100%;
