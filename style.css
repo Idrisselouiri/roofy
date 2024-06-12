@@ -86,7 +86,7 @@ header .ctn{
 }
 
 #home{
-  background-image: linear-gradient(260deg, rgba(50, 51, 53, 0) 0%, #323335 100%) , url("background.jpg");
+  background-image: linear-gradient(260deg, rgba(50, 51, 53, 0) 0%, #323335 100%) , url("/images/construction-site-silhouettes.jpg");
   background-position: center ;
   background-size: cover;
   margin-top: 50px;
@@ -192,7 +192,6 @@ border-radius: 10px;
   max-width: 120px;
   padding: 7px 0;
   margin-top: 15px;
-
 }
 .countainer-black{
   display: flex;
@@ -214,8 +213,8 @@ border-radius: 10px;
   margin: 50px 0;
   display: grid;
   grid-template-columns: repeat(2 ,1fr);
-  grid-template-rows: repeat(2 , 160px);
-  gap: 10px;
+  grid-template-rows: repeat(2 , 200px);
+  gap: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; 
@@ -223,12 +222,13 @@ border-radius: 10px;
 }
 .grid-item {
   height: 100%;
-  color: #fff;
+  color: #000;
   border-radius: 6px;
+  padding: 0 20px;
   justify-content:center;
   align-items: center;
   display: flex; 
-  background-color: #28292A;
+  background-color: white;
 }
 .txt{
   max-width: 400px;
@@ -244,8 +244,8 @@ border-radius: 10px;
   letter-spacing: 1px; 
 }
 .grid-item img{
-  height:100px;
-  padding-right: 20px;
+  height: 140px;
+  padding-right: 30px;
 }
 .Services{
   margin-top: 100px;
@@ -457,6 +457,7 @@ border-radius: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 150px;
   padding: 0 20px;
 }
 .services .section-title {
@@ -599,7 +600,6 @@ border-radius: 10px;
   border-radius: 10px;
   line-height: 25px;
 }
-
 .item-flexe h2{
   color: #37302F;
   font-size: 20px;
